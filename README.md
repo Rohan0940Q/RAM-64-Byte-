@@ -101,12 +101,9 @@ $monitor("Time=%0t clk=%b we=%b wr_addr=%d rd_addr=%d data=%b q=%b",
 Prints the full signal state on every change, giving a cycle-by-cycle trace of the RAM's behavior.
 
 ## 8. Simulation Flow
-The design was simulated using Icarus Verilog:
+The simulation flow is controlled by run.tcl
 
-```bash
-iverilog -o sim ram_64x8.v ram_64x8_tb.v
-vvp sim
-```
+
 
 Total simulation run time: 50 ns (5 clock periods).
 
